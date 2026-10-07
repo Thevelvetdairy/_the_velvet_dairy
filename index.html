@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Velvet Diary | Beauty, Fashion & Little Finds</title>
+<meta name="description" content="The Velvet Diary — a vintage-inspired collection of beauty, fashion and little finds worth saving.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5efe7;color:#3d2b25;font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+header{border-bottom:1px solid #d9c9ba;background:#f5efe7}
+.nav{max-width:1150px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Cormorant Garamond',serif;font-size:31px;letter-spacing:1.5px}
+.navlinks{display:flex;gap:26px;font-size:13px;text-transform:uppercase;letter-spacing:1.4px}
+.hero{max-width:1150px;margin:auto;padding:76px 24px 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:11px;color:#8b6d5b;margin-bottom:17px}
+h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(58px,8vw,94px);line-height:.9;margin-bottom:25px}
+.hero p{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.25;max-width:540px;color:#624d43;margin-bottom:30px}
+.btn{display:inline-block;background:#4a332a;color:#f8f1e9;padding:14px 25px;font-size:12px;text-transform:uppercase;letter-spacing:1.5px}
+.visual{height:500px;background:#d8c2b0;position:relative;overflow:hidden}
+.visual:before{content:"";position:absolute;width:280px;height:410px;background:#8d6653;left:50%;top:55px;transform:translateX(-50%) rotate(5deg);border-radius:150px 150px 18px 18px}
+.visual:after{content:"THE VELVET DIARY";position:absolute;bottom:25px;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-size:28px;letter-spacing:2px;color:#f7eee5}
+section{max-width:1150px;margin:auto;padding:55px 24px}
+.section-head{text-align:center;margin-bottom:35px}
+.section-head h2{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:500}
+.section-head p{color:#806c60;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#eee4da;border:1px solid #dfd0c1;padding:34px 25px;text-align:center;min-height:210px}
+.card .symbol{font-size:28px;margin-bottom:14px}
+.card h3{font-family:'Cormorant Garamond',serif;font-size:29px;font-weight:500;margin-bottom:8px}
+.card p{font-size:14px;color:#725f55;line-height:1.6}
+.shop{background:#4a332a;color:#f8f0e8;max-width:1100px;margin:35px auto 70px;padding:48px 30px}
+.shop h2{font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;text-align:center}
+.shop p{text-align:center;color:#d9c9ba;margin:5px 0 28px}
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.links a{background:#f5efe7;color:#4a332a;text-align:center;padding:16px;font-size:13px;letter-spacing:.5px}
+.note{text-align:center;font-size:12px;color:#8a7669;margin-top:18px}
+footer{border-top:1px solid #d9c9ba;text-align:center;padding:28px 20px;color:#806c60;font-size:12px;letter-spacing:.5px}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.visual{height:370px}.grid,.links{grid-template-columns:1fr}h1{font-size:65px}.hero p{font-size:21px}.section-head h2,.shop h2{font-size:40px}}
+</style>
+</head>
+<body>
+<header>
+<nav class="nav">
+<a class="logo" href="#">The Velvet Diary</a>
+<div class="navlinks"><a href="#beauty">Beauty</a><a href="#fashion">Fashion</a><a href="#finds">Finds</a></div>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow">A little corner of lovely things</div>
+<h1>The Velvet<br>Diary</h1>
+<p>Beauty, fashion and little finds — carefully chosen for your wishlist.</p>
+<a class="btn" href="#finds">Browse the diary</a>
+</div>
+<div class="visual"></div>
+</section>
+
+<section id="beauty">
+<div class="section-head"><h2>Inside the Diary</h2><p>Things worth saving, sharing & adding to cart.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">✦</div><h3>Beauty</h3><p>Makeup, skincare, haircare and pretty little essentials for your everyday routine.</p></article>
+<article class="card" id="fashion"><div class="symbol">❧</div><h3>Fashion</h3><p>Outfits, jewellery, bags, shoes and accessories with an effortless feminine feel.</p></article>
+<article class="card"><div class="symbol">♡</div><h3>Little Finds</h3><p>Affordable treasures and everyday pieces discovered across our favourite shops.</p></article>
+</div>
+</section>
+
+<div class="shop" id="finds">
+<h2>Shop the Finds</h2>
+<p>Your next favourite thing might be hiding here.</p>
+<div class="links">
+<a href="#" onclick="return false">Amazon Finds →</a>
+<a href="#" onclick="return false">Flipkart Finds →</a>
+<a href="#" onclick="return false">Meesho Finds →</a>
+</div>
+<div class="note">Product links can be added here as your affiliate collection grows.</div>
+</div>
+</main>
+
+<footer>© 2026 The Velvet Diary · Beauty · Fashion · Little Finds</footer>
+</body>
+</html>
